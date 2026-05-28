@@ -5,4 +5,5 @@ namespace TodoApi.Repositories;
 public interface ITaskRepository
 {
     IEnumerable<TodoTask> GetAll();
+    TodoTask Create(TodoTask task);
 }

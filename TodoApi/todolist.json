@@ -1,5 +1,34 @@
 [
-  { "id": 1, "title": "Estudar .NET", "description": null, "dueDate": null, "status": "Pendente" },
-  { "id": 2, "title": "Criar projeto de exemplo", "description": null, "dueDate": null, "status": "Pendente" },
-  { "id": 3, "title": "Apresentar para a turma", "description": null, "dueDate": null, "status": "Pendente" }
+  {
+    "Id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+    "Title": "Estudar .NET",
+    "Description": null,
+    "DueDate": null,
+    "CreatedAt": "2026-05-01T10:00:00Z",
+    "Status": "Pendente"
+  },
+  {
+    "Id": "b2c3d4e5-f6a7-8901-bcde-f12345678901",
+    "Title": "Criar projeto de exemplo",
+    "Description": "Projeto did\u00E1tico para demonstra\u00E7\u00E3o",
+    "DueDate": null,
+    "CreatedAt": "2026-05-10T14:30:00Z",
+    "Status": "Pendente"
+  },
+  {
+    "Id": "c3d4e5f6-a7b8-9012-cdef-123456789012",
+    "Title": "Apresentar para a turma",
+    "Description": null,
+    "DueDate": "2026-06-01T09:00:00Z",
+    "CreatedAt": "2026-05-15T08:00:00Z",
+    "Status": "Pendente"
+  },
+  {
+    "Id": "6d2365ae-9713-4b3c-91c7-7f16eb67a90c",
+    "Title": "Tarefa m\u00EDnima",
+    "Description": null,
+    "DueDate": null,
+    "CreatedAt": "2026-05-28T23:27:51.891371Z",
+    "Status": "Pendente"
+  }
 ]

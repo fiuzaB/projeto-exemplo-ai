@@ -9,7 +9,8 @@ public class TaskRepository : ITaskRepository
 
     private static readonly JsonSerializerOptions _jsonOptions = new()
     {
-        PropertyNameCaseInsensitive = true
+        PropertyNameCaseInsensitive = true,
+        WriteIndented = true
     };
 
     public TaskRepository(IWebHostEnvironment env)
@@ -24,5 +25,13 @@ public class TaskRepository : ITaskRepository
 
         var json = File.ReadAllText(_filePath);
         return JsonSerializer.Deserialize<List<TodoTask>>(json, _jsonOptions) ?? [];
+    }
+
+    public TodoTask Create(TodoTask task)
+    {
+        var tasks = GetAll().ToList();
+        tasks.Add(task);
+        File.WriteAllText(_filePath, JsonSerializer.Serialize(tasks, _jsonOptions));
+        return task;
     }
 }

@@ -5,4 +5,5 @@ namespace TodoApi.Services;
 public interface ITaskService
 {
     IEnumerable<TodoTask> GetAll();
+    (TodoTask? task, List<string> errors) Create(CreateTaskRequest request);
 }
