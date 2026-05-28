@@ -1,0 +1,5 @@
+[
+  { "id": 1, "title": "Estudar .NET", "description": null, "dueDate": null, "status": "Pendente" },
+  { "id": 2, "title": "Criar projeto de exemplo", "description": null, "dueDate": null, "status": "Pendente" },
+  { "id": 3, "title": "Apresentar para a turma", "description": null, "dueDate": null, "status": "Pendente" }
+]
